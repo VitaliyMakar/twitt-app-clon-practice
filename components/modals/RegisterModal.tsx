@@ -31,9 +31,10 @@ const RegisterModal = () => {
         email,
         password,
       });
-      toast.success("Account created");
 
-      await signIn("credentials", { email, password });
+          // toast.success("Account created");
+      //
+      // await signIn("credentials", { email, password });
 
       registerModal.onClose();
     } catch (e) {
