@@ -6,8 +6,6 @@ import useRegisterModal from "@/hooks/useRegisterModal";
 import axios from "axios";
 import { toast } from "react-hot-toast";
 import { signIn } from "next-auth/react";
-import bcrypt from "bcrypt";
-import prisma from "@/libs/prismadb";
 
 const RegisterModal = () => {
   const loginModal = useLoginModal();
@@ -32,10 +30,9 @@ const RegisterModal = () => {
         password,
       });
 
-          // toast.success("Account created");
-      //
-      // await signIn("credentials", { email, password });
+      toast.success("Account created");
 
+      await signIn("credentials", { email, password, redirect: false });
       registerModal.onClose();
     } catch (e) {
       console.log(e);
