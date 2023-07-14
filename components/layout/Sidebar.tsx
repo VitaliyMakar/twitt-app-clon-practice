@@ -49,11 +49,7 @@ const Sidebar = () => {
             <SidebarItem
               label="Logout"
               icon={BiLogOut}
-              onClick={() =>
-                signOut().then((res) => {
-                  console.log(res);
-                })
-              }
+              onClick={() => signOut()}
             />
           )}
 

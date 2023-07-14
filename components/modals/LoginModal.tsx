@@ -19,7 +19,6 @@ const LoginModal = () => {
       setIsLoading(true);
       await signIn("credentials", { email, password, redirect: false }).then(
         (res) => {
-          console.log(res);
           if (!res?.error) {
             loginModal.onClose();
           } else {
