@@ -1,5 +1,3 @@
-"use client";
-
 import "./globals.css";
 import { Inter } from "next/font/google";
 import NextAuthSessionProvider from "@/app/providers/sessionProvider";
@@ -8,7 +6,6 @@ import { Toaster } from "react-hot-toast";
 import Sidebar from "@/components/layout/Sidebar";
 import LoginModal from "@/components/modals/LoginModal";
 import RegisterModal from "@/components/modals/RegisterModal";
-import Header from "@/components/layout/Header";
 import FollowBar from "@/components/layout/FollowBar";
 import EditModal from "@/components/modals/EditModal";
 

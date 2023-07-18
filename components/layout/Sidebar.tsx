@@ -1,3 +1,5 @@
+"use client";
+
 import { BsBellFill, BsHouseFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 import { BiLogOut } from "react-icons/bi";
@@ -25,7 +27,7 @@ const Sidebar = () => {
     },
     {
       label: "Profile",
-      href: "/users/123",
+      href: `users/${currentUser?.id}`,
       icon: FaUser,
       auth: true,
     },
